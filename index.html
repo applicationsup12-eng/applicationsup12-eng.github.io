@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bamboo Notes 🌿</title>
+  <link rel="icon" href="icon.png" />
+  <style>
+    /* ----------- RESET ----------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Noto Sans JP", "Helvetica Neue", sans-serif;
+      background: linear-gradient(180deg, #e6fff1 0%, #c3f2df 100%);
+      color: #333;
+      text-align: center;
+      padding: 30px 15px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ----------- HEADER ----------- */
+    header {
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      color: #1b7a55;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #2d3748;
+      line-height: 1.8;
+    }
+
+    /* ----------- CHARACTER ----------- */
+    .character {
+      width: 160px;
+      height: auto;
+      margin: 20px auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* ----------- FEATURES ----------- */
+    section {
+      margin-top: 30px;
+      max-width: 600px;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #1b7a55;
+    }
+
+    ul {
+      list-style: none;
+      text-align: left;
+      display: inline-block;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    ul li::before {
+      content: "🌱 ";
+    }
+
+    /* ----------- BUTTON ----------- */
+    .button {
+      display: inline-block;
+      background-color: #32a852;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-top: 25px;
+      transition: 0.2s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button:hover {
+      background-color: #279846;
+      transform: translateY(-2px);
+    }
+
+    /* ----------- FOOTER ----------- */
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* ----------- RESPONSIVE ----------- */
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.1rem; }
+      .button { padding: 12px 24px; }
+      ul li { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🌿 Bamboo Notes</h1>
+    <h2>日常で見つけた英単語を、あなたのものに。<br>
+      AI × ゲーム感覚で、英語をもっと楽しく学ぼう！</h2>
+  </header>
+
+  <img src="bamboo-character.png" alt="Bamboo Mascot" class="character" />
+
+  <section>
+    <h3>✨ 特徴</h3>
+    <ul>
+      <li>英単語を入力するだけで意味と例文を自動生成</li>
+      <li>AIがあなたの英作文にフィードバック💬</li>
+      <li>1日3回のチャレンジで記憶を定着🔥</li>
+      <li>竹キャラと一緒に成長していく🌱</li>
+    </ul>
+  </section>
+
+  <a href="https://apps.apple.com/" class="button">📱 App Storeで見る</a>
+
+  <footer>
+    <p>© 2025 Bamboo Notes Team</p>
+  </footer>
+</body>
+</html>
