@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bamboo Notes 🌿</title>
   <link rel="icon" href="icon.png" />
+
+  <!-- ✅ TikTok対策：3秒後にApp Storeへ -->
+  <meta http-equiv="refresh" content="3; url=https://apps.apple.com/app/id6753908452">
+
   <style>
-    /* ----------- RESET ----------- */
     * {
       margin: 0;
       padding: 0;
@@ -26,7 +29,6 @@
       justify-content: space-between;
     }
 
-    /* ----------- HEADER ----------- */
     header {
       margin-bottom: 30px;
     }
@@ -44,7 +46,6 @@
       line-height: 1.8;
     }
 
-    /* ----------- CHARACTER ----------- */
     .character {
       width: 160px;
       height: auto;
@@ -58,7 +59,6 @@
       100% { transform: translateY(0); }
     }
 
-    /* ----------- FEATURES ----------- */
     section {
       margin-top: 30px;
       max-width: 600px;
@@ -86,7 +86,6 @@
       content: "🌱 ";
     }
 
-    /* ----------- BUTTON ----------- */
     .button {
       display: inline-block;
       background-color: #32a852;
@@ -105,14 +104,18 @@
       transform: translateY(-2px);
     }
 
-    /* ----------- FOOTER ----------- */
+    .subtext {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      color: #2d3748;
+    }
+
     footer {
       margin-top: 40px;
       font-size: 0.9rem;
       color: #666;
     }
 
-    /* ----------- RESPONSIVE ----------- */
     @media (max-width: 600px) {
       h1 { font-size: 2.2rem; }
       h2 { font-size: 1.1rem; }
@@ -125,8 +128,10 @@
 <body>
   <header>
     <h1>🌿 Bamboo Notes</h1>
-    <h2>日常で見つけた英単語を、あなたのものに。<br>
-      AI × ゲーム感覚で、英語をもっと楽しく学ぼう！</h2>
+    <h2>
+      日常で見つけた英単語を、あなたのものに。<br>
+      AI × ゲーム感覚で、英語をもっと楽しく学ぼう！
+    </h2>
   </header>
 
   <img src="bamboo-character.png" alt="Bamboo Mascot" class="character" />
@@ -141,10 +146,31 @@
     </ul>
   </section>
 
-  <a href="https://apps.apple.com/jp/app/bamboo-notes/id6753908452" class="button">📱 ストアを開く</a>
+  <!-- ✅ メインボタン -->
+  <a href="https://apps.apple.com/app/id6753908452" class="button">
+    📱 App Storeで開く
+  </a>
+
+  <div class="subtext">
+    ※ 数秒後に自動でApp Storeへ移動します
+  </div>
 
   <footer>
     <p>© 2025 Bamboo Notes Team</p>
   </footer>
+
+  <!-- ✅ TikTok内ブラウザ検知 -->
+  <script>
+    const ua = navigator.userAgent.toLowerCase();
+    if (ua.includes("tiktok")) {
+      const notice = document.createElement("p");
+      notice.style.marginTop = "20px";
+      notice.style.fontSize = "0.9rem";
+      notice.style.color = "#1b7a55";
+      notice.textContent = "TikTok内ブラウザで開けない場合があります。右上「…」→「ブラウザで開く」をお試しください。";
+      document.body.insertBefore(notice, document.querySelector("footer"));
+    }
+  </script>
+
 </body>
 </html>
