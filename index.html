@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bamboo Notes — 日常で出会った英単語を、あなたの言葉に。</title>
+<meta name="description" content="Bamboo Notes は AI 統合型の英単語メモアプリ。単語を入力するだけで定義と例文が届き、通知に答えるだけで復習が完了します。">
+<meta property="og:title" content="Bamboo Notes">
+<meta property="og:description" content="日常で出会った英単語を、あなたの言葉に。">
+<meta property="og:image" content="bamboo-character.png">
+<link rel="icon" href="bamboo-character.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Lora:ital,wght@0,400;0,500;1,400&amp;family=Noto+Serif+JP:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: var(--color-bg); }
+  a { color: var(--color-accent-700); text-decoration: none; }
+  a:hover { color: var(--color-accent-600); text-decoration: underline; }
+  ::selection { background: var(--color-accent-200); }
+  @keyframes bnFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+  @media (max-width: 880px) {
+    [data-col2] { grid-template-columns: 1fr !important; gap: 40px !important; }
+    [data-hero] { padding-top: 56px !important; }
+    [data-hero] [data-heroart] { order: -1; }
+    [data-hero] [data-heroart] img { max-width: 220px !important; }
+    h2 { font-size: 27px !important; }
+    h1, h2, h3 { word-break: keep-all; }
+    [data-strengthrow] { grid-template-columns: 1fr !important; gap: 12px !important; }
+    [data-navlinks] { gap: 16px !important; font-size: 13px !important; }
+    section { padding-left: 20px !important; padding-right: 20px !important; }
+  }
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: var(--color-bg); color: var(--color-text); font-family: 'Noto Serif JP', var(--font-body), serif; line-height: 1.9;">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--color-bg) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--color-divider);">
+    <div style="max-width: 1080px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        
+        <span style="font-family: var(--font-heading), serif; font-size: 21px; letter-spacing: 0.02em;">Bamboo Notes</span>
+      </div>
+      <nav data-navlinks="" style="display: flex; align-items: center; gap: 28px; font-size: 14px;">
+        <a href="#feature" style="color: var(--color-text);">機能</a>
+        <a href="#strength" style="color: var(--color-text);">強み</a>
+        <a href="#contact" class="btn btn-primary" style="text-decoration: none;">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section data-hero="" data-col2="" style="max-width: 1080px; margin: 0 auto; padding: 96px 24px 84px; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;">
+    <div>
+      <div style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 24px;">AI-Integrated Vocabulary Notes</div>
+      <h1 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 50px); line-height: 1.42; letter-spacing: 0.01em; margin: 0 0 28px; word-break: keep-all; overflow-wrap: break-word;">日常で出会った<br>英単語を、あなたの言葉に。</h1>
+      <div style="width: 72px; height: 1px; background: var(--color-accent); margin-bottom: 28px;"></div>
+      <p style="font-size: 16px; margin: 0 0 36px; max-width: 34em; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">街の看板、映画の一言、仕事のメール。気になった単語をひとつ入力するだけで、AIが意味と例文を書き添えます。あとは通知にまかせて、思い出すだけ。単語帳をつくる時間は、もう必要ありません。</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+        <a href="https://apps.apple.com/jp/app/bamboo-notes/id6753908452" target="_blank" rel="noopener" class="btn btn-primary" style="text-decoration: none;">無料ではじめる</a>
+        <a href="#feature" class="btn btn-ghost" style="text-decoration: none;">機能を見る</a>
+      </div>
+      <div style="display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap;">
+        <span class="tag tag-outline">iOS</span>
+        <span class="tag tag-outline">登録は30秒</span>
+      </div>
+    </div>
+    <div data-heroart="" style="display: flex; justify-content: center;">
+      <img src="bamboo-character.png" alt="Bamboo Notes のマスコット" style="width: 100%; max-width: 340px; object-fit: contain; animation: bnFloat 6s ease-in-out infinite;">
+    </div>
+  </section>
+
+  <div style="border-top: 1px solid var(--color-divider);"></div>
+
+  <section style="max-width: 1080px; margin: 0 auto; padding: 84px 24px;">
+    <div data-col2="" style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 56px; align-items: center;">
+      <div style="display: flex; justify-content: center;">
+        <img src="bamboo-character.png" alt="" style="width: 100%; max-width: 230px; object-fit: contain;">
+      </div>
+      <div>
+        <div style="font-family: var(--font-heading), serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 18px;">The Problem</div>
+        <h2 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 400; font-size: 34px; line-height: 1.5; margin: 0 0 22px; word-break: keep-all;">覚えたはずの単語が、<br>三日後には消えている。</h2>
+        <p style="font-size: 16px; margin: 0; max-width: 36em; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">辞書で引いて、ノートに書いて、それで終わり。悪いのは記憶力ではなく、思い出す機会がないことでした。Bamboo Notes は「調べる」と「思い出す」をひとつの流れにまとめ、あなたが忘れかけた頃にそっと声をかけます。</p>
+      </div>
+    </div>
+  </section>
+
+  <div style="border-top: 1px solid var(--color-divider);"></div>
+
+  <section id="feature" style="max-width: 1080px; margin: 0 auto; padding: 84px 24px;">
+    <div style="text-align: center; margin-bottom: 56px;">
+      <div style="font-family: var(--font-heading), serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 16px;">Features</div>
+      <h2 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 400; font-size: 36px; line-height: 1.5; margin: 0; word-break: keep-all;">四つのしくみ</h2>
+    </div>
+    <div data-col2="" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+
+      <div class="card" style="padding: 34px 32px;">
+        <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px;">
+          <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 32px; color: var(--color-accent); line-height: 1;">01</span>
+          <h3 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 500; font-size: 21px; margin: 0; word-break: keep-all;">AI統合型のメモアプリ</h3>
+        </div>
+        <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">メモ帳とAIが別々のアプリに分かれていない。書いた場所でそのまま調べられるので、思いついた瞬間から手が止まりません。</p>
+      </div>
+
+      <div class="card" style="padding: 34px 32px;">
+        <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px;">
+          <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 32px; color: var(--color-accent); line-height: 1;">02</span>
+          <h3 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 500; font-size: 21px; margin: 0; word-break: keep-all;">入力するだけで、定義と例文</h3>
+        </div>
+        <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">単語をひとつ打ち込めば、AIが意味をやさしく整え、日常で使える例文を添えます。辞書を開いて写す手間はもういりません。</p>
+      </div>
+
+      <div class="card" style="padding: 34px 32px;">
+        <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px;">
+          <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 32px; color: var(--color-accent); line-height: 1;">03</span>
+          <h3 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 500; font-size: 21px; margin: 0; word-break: keep-all;">通知だけで復習が終わる</h3>
+        </div>
+        <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">届いた通知に答えれば、その場で一回分の復習が完了。アプリを開く決心も、机に向かう時間も必要ありません。</p>
+      </div>
+
+      <div class="card" style="padding: 34px 32px;">
+        <div style="display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px;">
+          <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 32px; color: var(--color-accent); line-height: 1;">04</span>
+          <h3 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 500; font-size: 21px; margin: 0; word-break: keep-all;">クイズの記録が目に見える</h3>
+        </div>
+        <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">通知クイズの正解と間違いはそのまま図になります。得意な単語と苦手な単語が一目で分かり、次に読む場所が決まります。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div style="border-top: 1px solid var(--color-divider);"></div>
+
+  <section id="strength" style="max-width: 1080px; margin: 0 auto; padding: 84px 24px;">
+    <div data-col2="" style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start;">
+      <div>
+        <div style="font-family: var(--font-heading), serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 18px;">Why Bamboo Notes</div>
+        <h2 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 400; font-size: 34px; line-height: 1.5; margin: 0 0 32px; word-break: keep-all;">続けるための<br>設計になっている。</h2>
+        <div style="display: flex; flex-direction: column; gap: 26px;">
+          <div data-strengthrow="" style="display: grid; grid-template-columns: 184px 1fr; gap: 20px; padding-bottom: 26px; border-bottom: 1px solid var(--color-divider);">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              
+              <span style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 500; font-size: 17px; line-height: 1.5; word-break: keep-all;">教材が<br>いらない</span>
+            </div>
+            <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">単語帳を買うのではなく、自分が出会った言葉が教材になります。だから覚える理由がはじめからあります。</p>
+          </div>
+          <div data-strengthrow="" style="display: grid; grid-template-columns: 184px 1fr; gap: 20px; padding-bottom: 26px; border-bottom: 1px solid var(--color-divider);">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              
+              <span style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 500; font-size: 17px; line-height: 1.5; word-break: keep-all;">一日<br>十五秒</span>
+            </div>
+            <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">通知に答えるだけの短さに区切ってあります。忙しい日でも途切れず、記録が途切れないから続きます。</p>
+          </div>
+          <div data-strengthrow="" style="display: grid; grid-template-columns: 184px 1fr; gap: 20px;">
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              
+              <span style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 500; font-size: 17px; line-height: 1.5; word-break: keep-all;">忘れる頃に<br>届く</span>
+            </div>
+            <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">記憶が薄れる頃を見計らって出題します。同じ回数でも、思い出す手応えが残りやすくなります。</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="border: 1px solid var(--color-divider); border-radius: var(--radius-md, 4px); padding: 36px 34px; background: color-mix(in srgb, var(--color-neutral-100) 55%, transparent);">
+        <div style="font-family: var(--font-heading), serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 26px;">A Day With Bamboo</div>
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="display: grid; grid-template-columns: 74px 1fr; gap: 18px; align-items: baseline;">
+            <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 17px; color: var(--color-accent-700);">08:20</span>
+            <span style="font-size: 15px;">駅の広告で見た <em style="font-family: var(--font-body), serif;">resilient</em> をメモ。AIが意味と例文を返す。</span>
+          </div>
+          <div style="height: 1px; background: var(--color-divider);"></div>
+          <div style="display: grid; grid-template-columns: 74px 1fr; gap: 18px; align-items: baseline;">
+            <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 17px; color: var(--color-accent-700);">13:05</span>
+            <span style="font-size: 15px;">昼休みに通知。四択に答えて、そのまま閉じる。</span>
+          </div>
+          <div style="height: 1px; background: var(--color-divider);"></div>
+          <div style="display: grid; grid-template-columns: 74px 1fr; gap: 18px; align-items: baseline;">
+            <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 17px; color: var(--color-accent-700);">21:40</span>
+            <span style="font-size: 15px;">今日の記録が図になる。苦手な三語が浮かび上がる。</span>
+          </div>
+          <div style="height: 1px; background: var(--color-divider);"></div>
+          <div style="display: grid; grid-template-columns: 74px 1fr; gap: 18px; align-items: baseline;">
+            <span style="font-family: var(--font-heading), serif; font-feature-settings: 'tnum'; font-size: 17px; color: var(--color-accent-700);">翌週</span>
+            <span style="font-size: 15px;">忘れかけた頃に、同じ単語がもう一度届く。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="border-top: 1px solid var(--color-divider);"></div>
+
+  <section id="contact" style="max-width: 1080px; margin: 0 auto; padding: 84px 24px 96px;">
+    <div data-col2="" style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start;">
+      <div>
+        <div style="font-family: var(--font-heading), serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--color-accent-700); margin-bottom: 18px;">Contact</div>
+        <h2 style="font-family: 'Noto Serif JP', var(--font-heading), serif; font-weight: 400; font-size: 34px; line-height: 1.5; margin: 0 0 22px; word-break: keep-all;">気になることは、<br>なんでも聞いてください。</h2>
+        <p style="font-size: 15px; margin: 0 0 28px; max-width: 30em; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">使い方の相談、学校や法人での導入、不具合の報告。お問い合わせフォームからお送りください。</p>
+        <img src="bamboo-character.png" alt="" style="width: 128px; object-fit: contain;">
+      </div>
+
+      <div style="border: 1px solid var(--color-divider); border-radius: var(--radius-md, 4px); padding: 36px 34px; display: flex; flex-direction: column; gap: 22px; align-items: flex-start;">
+        <div style="font-family: var(--font-heading), serif; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent-700);">Contact Form</div>
+        <p style="font-size: 15px; margin: 0; text-align: justify; color: color-mix(in srgb, var(--color-text) 82%, transparent);">お問い合わせは専用フォームから承っています。下のボタンから、必要な項目をご記入のうえ送信してください。</p>
+        <a href="https://forms.gle/4Yb8DoB8ZopMSJg9A" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="text-decoration: none;">お問い合わせフォームを開く</a>
+        <span style="font-size: 13px; color: color-mix(in srgb, var(--color-text) 62%, transparent);">別のタブで Google フォームが開きます。</span>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid var(--color-divider); background: color-mix(in srgb, var(--color-neutral-100) 45%, transparent);">
+    <div style="max-width: 1080px; margin: 0 auto; padding: 40px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        
+        <span style="font-family: var(--font-heading), serif; font-size: 18px;">Bamboo Notes</span>
+      </div>
+      <div style="font-size: 13px; color: color-mix(in srgb, var(--color-text) 62%, transparent);">© 2026 Bamboo Notes — 日常で出会った英単語を、あなたの言葉に。</div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
